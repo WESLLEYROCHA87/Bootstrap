@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Curso Bootstrap</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="row">
+        <div class=" col">
+            <!-- float-right: Flutua a imagem para a direira   -->
+            <img src="img/Logos/LogoCoziindCorBranco.png" class="img-fluid float-xl-left mx-auto d-block" style="width: 120px;">
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 text-dark">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item active" href="index.html">Home</a>
+                    <a class="breadcrumb-item" href="imagens.html">Imagens</a>
+                    <a class="breadcrumb-item" href="badges.html">Badges </a>
+                    <a class="breadcrumb-item" href="breadcrumb.html">Breadcrumb </a>
+                    <a class="breadcrumb-item" href="cards.html">Cards </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Trabalhando com Imagens</h1>
+        <h2 class="my-2">Classe img-fluid</h2>
+        <div class="row">
+            <div class="col">
+                <!-- A classe (img-fluid) faz com que a imagem fique fuida, preencha toda a tela.
+                Isso serve até caso você venha reduzir no número de colunas conforme exemplo abaixo-->
+                <img src="img/Carousel/Carousel_1.jpg" class="img-fluid">
+            </div>
+        </div>
+
+        <h2 class="my-2">Reduzindo o n° de Colunas</h2>
+        <div class="row">
+            <div class="col-6">
+                <!--  reduzindo no número de colunas conforme exemplo abaixo-->
+                <img src="img/Carousel/Carousel_1.jpg" class="img-fluid">
+            </div>
+        </div>
+
+        <h2 class="my-2">Classe: thumbnail </h2>
+        <div class="row">
+            <div class="col-6">
+                <!-- Adiciona borda a imagem e ela também é responsiva   -->
+                <img src="img/Carousel/Carousel_1.jpg" class="img-thumbnail">
+            </div>
+        </div>
+
+        <h2 class="my-2">Bordas arredodadas: rounded</h2>
+        <div class="row">
+            <div class="col-6">
+                <!-- rounded deixa a imagem com cantos arredondados  -->
+                <img src="img/Carousel/Carousel_1.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <h2 class="my-2">float-right</h2>
+        <div class="row">
+            <div class="col-6">
+                <!-- rounded deixa a imagem com cantos arredondados  -->
+                <img src="img/Logos/LogoCoziindCorBranco.png" class=" img-fluid" style="width: 120px;">
+            </div>
+
+            <div class="col-6">
+                <!-- float-right: Flutua a imagem para a direira   -->
+                <img src="img/Logos/LogoCoziindCorBranco.png" class=" img-fluid float-right" style="width: 120px;">
+            </div>
+        </div>
+
+        <h2 class="my-2">Imagem altera de posição conforme cada tamanho de tela</h2>
+        <div class="row">
+            <div class=" col">
+                <!-- A imagem fica no canto esquerdo em tela lg e no centro em outos tamanhos de tela    -->
+                <img src="img/Logos/LogoCoziindCorBranco.png" class="img-fluid float-lg-left mx-auto d-block" style="width: 120px;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Link Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+</body>
+
+</html>
