@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Curso Bootstrap</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="row">
+        <div class=" col">
+            <!-- float-right: Flutua a imagem para a direira   -->
+            <img src="img/Logos/LogoCoziindCorBranco.png" class="img-fluid float-xl-left mx-auto d-block" style="width: 120px;">
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12 text-dark">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="index.html">Home</a>
+                    <a class="breadcrumb-item" href="imagens.html">Imagens</a>
+                    <a class="breadcrumb-item" href="badges.html">Badges </a>
+                    <a class="breadcrumb-item" href="breadcrumb.html">Breadcrumb </a>
+                    <a class="breadcrumb-item" href="cards.html">Cards </a>
+                    <a class="breadcrumb-item active" href="colapso.html">Colapso </a>
+                    <a class="breadcrumb-item" href="formulario.html">Formulário </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-light">
+        <div class="row">
+            <div class="col-12">
+                <h1>Colapso</h1>
+                <p>
+                    <a href="#ItemColapso1" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="#ItemColapso1"> Disparador Href</a>
+
+                    <button class="btn btn-warning ml-2" data-toggle="collapse" type="button" data-target="#ItemColapso1" aria-expanded="false" aria-controls="ItemColapso1">Disparador
+                        Button</button>
+                </p>
+                <div class="collapse" id="ItemColapso1">
+                    <div class="cars card-body ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, autem quibusdam dolore magnam porro eum tenetur veritatis impedit earum ut ratione cum laborum, iste non neque inventore quidem, aliquid atque.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <a href="#ItemColapso2" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="#ItemColapso2"> Disparador Href</a>
+
+                    <button class="btn btn-warning ml-2" data-toggle="collapse" type="button" data-target="#ItemColapso3" aria-expanded="false" aria-controls="ItemColapso3">Disparador
+                        Button</button>
+                </p>
+                <div class="collapse" id="ItemColapso2">
+                    <div class="cars card-body">
+                        <h4>Item 1</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, autem quibusdam dolore magnam porro eum tenetur veritatis impedit earum ut ratione cum laborum, iste non neque inventore quidem, aliquid atque.
+                    </div>
+                </div>
+
+                <div class="collapse" id="ItemColapso3">
+                    <div class="cars card-body">
+                        <h4>Item 2</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, autem quibusdam dolore magnam porro eum tenetur veritatis impedit earum ut ratione cum laborum, iste non neque inventore quidem, aliquid atque.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <h1>Colapso Accordion</h1>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Grupo de itens colapsável #1
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur minus cupiditate quisquam tenetur omnis laboriosam esse recusandae dolor eaque a facere, repellat aspernatur exercitationem accusamus eveniet
+                                    alias rem vero?</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Grupo de itens colapsável #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur minus cupiditate quisquam tenetur omnis laboriosam esse recusandae dolor eaque a facere, repellat aspernatur exercitationem accusamus eveniet
+                                    alias rem vero?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Grupo de itens colapsável #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur minus cupiditate quisquam tenetur omnis laboriosam esse recusandae dolor eaque a facere, repellat aspernatur exercitationem accusamus eveniet
+                                    alias rem vero?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Link Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
